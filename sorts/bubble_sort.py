@@ -21,6 +21,16 @@ def bubble_sort(collection):
     >>> bubble_sort([-23,0,6,-4,34])
     [-23,-4,0,6,34]
     """
+
+    """
+    冒泡排序,就不断的两个相近的比较,外层循环一个大的数据长度次数.
+    for i in range(3) ,循环3次.
+    range(3)生成的序列是从0开始小于3的整数[0,1,2]
+     if not swapped: break   
+    IF not TRUE ,  swapped =TRUE 两个比较有大于前面的.需要排序
+    还有一个精妙的地方,大概就是它的循环次数设置.  数据列4 ,外循环3 ,内循环也是3.将最大的排序到最后,就少一次.
+    """
+
     length = len(collection)
     for i in range(length-1):
         swapped = False
